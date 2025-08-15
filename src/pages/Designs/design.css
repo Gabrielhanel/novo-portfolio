@@ -1,0 +1,50 @@
+.titulo{
+    font-size: 3em;
+    color: #355B73;
+    font-weight: bold;
+    text-align: left;
+}
+
+.areaTitulo{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 35vh;
+}
+
+.imgSiteFoco{
+    width: 70vh;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+}
+.imgAppFred {
+    height: 55vh;
+    width: 30vh;
+    align-items: center;
+    justify-content: center;
+}
+.texto{
+    font-size: 1.5em;
+    color: #757575;
+    font-weight: normal;
+    padding-bottom: 2vh;
+}
+
+.link {
+    width: 30vh;
+    height: 5vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #355B73;
+    border-radius: 10px;
+} 
+.textoLink{
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
