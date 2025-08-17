@@ -1,3 +1,16 @@
+@media (max-width: 1024px) {
+    .imgCelulares{
+        display: block
+    }
+}
+
+/* Celular */
+@media (max-width: 768px) {
+  .imgCelulares{
+          display: block
+  }
+}
+
 .areaTagFechamento{
     display: flex;
     justify-content: flex-start;

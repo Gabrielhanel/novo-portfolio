@@ -6,12 +6,16 @@ export default function About() {
       <div className="areaTitulo">
         <text className="titulo">QUEM SOU EU?</text>
       </div>
-      <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", paddingTop: "5vh" }}>
+      <div className="areaMinhaFoto">
         <div style={{ display: "block"}}>
           <img src={myPhoto} className="imgMinhaFoto" />
+
+          <a href="#" className="botao">
           <div className="areaBotao">
-            <a href="#" className="botao">BAIXAR C.V.</a>
+            <text>BAIXAR CV</text>
           </div>
+          </a>
+
         </div>
         <div className="areaTexto">
           <text className="texto">

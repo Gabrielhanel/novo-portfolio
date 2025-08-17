@@ -1,3 +1,23 @@
+@media (max-width: 1024px) {
+.areaMinhaFoto{
+  flex-direction: column;
+}
+}
+
+/* Celular */
+@media (max-width: 768px) {
+.areaMinhaFoto{
+  flex-direction: column;
+}
+}
+
+.areaMinhaFoto{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5vh;
+}
 .areaTitulo{
     width: 100vw;
     height: 15vh;
@@ -20,12 +40,14 @@
     display: block;
     text-align: center;
     margin-left: 25vh;
-    width: 30vw;
+    margin-top: 3vh;
+    width: 60vw;
 }
 .texto{
     font-size: 1.5em;
         color: #355B73;
     font-weight: normal;
+    text-align: center;
 }
 .areaBotao{
     justify-content: center;
