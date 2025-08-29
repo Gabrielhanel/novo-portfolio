@@ -4,23 +4,14 @@ import imagemAppFred from "../../../src/assets/images/tela-appfred.png";
 
 export default function Design() {
   return (
-    <div style={{ width: "100%", height: "100%" }}>
+    <div style={{ width: "100%", height: "auto" }}>
       <div className="areaTitulo">
         <h1 className="titulo">
           DESIGNS E <br /> PROTÓTIPOS
         </h1>
       </div>
 
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "center",
-          paddingLeft: "5vh",
-          paddingTop: "5vh",
-        }}
-      >
+      <div className={styles.areaDesign}>
         <div
           style={{
             display: "flex",

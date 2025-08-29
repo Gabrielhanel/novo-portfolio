@@ -11,9 +11,10 @@ export const ProjectsCarousel = () => (
     spaceBetween={20}
     loop>
     <SwiperSlide>
-      <div><h1>sla</h1></div>
+      Card 1
       </SwiperSlide>
     <SwiperSlide>Card 2</SwiperSlide>
     <SwiperSlide>Card 3</SwiperSlide>
+    <SwiperSlide>Card 4</SwiperSlide>
   </Swiper>
 );
