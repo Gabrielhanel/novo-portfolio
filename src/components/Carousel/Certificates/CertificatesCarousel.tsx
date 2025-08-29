@@ -10,6 +10,10 @@ export const CertificatesCarousel = () => (
     navigation
     slidesPerView={3}
     spaceBetween={20}
+        breakpoints={{
+      640: { slidesPerView: 1, spaceBetween: 10 },
+      1024: { slidesPerView: 3, spaceBetween: 30 },
+    }}
     loop
   >
     <SwiperSlide>Card 1</SwiperSlide>

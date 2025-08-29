@@ -1,19 +1,48 @@
 import React from "react";
+import styles from "../../../pages/Designs/design.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {Navigation} from "swiper/modules";
+import imagemAppFred from "../../../assets/images/tela-appfred.png";
+import imagemSiteFoco from "../../../assets/images/tela-sitefoco.png";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-
 export const DesignsCarousel = () => (
-  <Swiper modules={[Navigation]}
+<Swiper
+  modules={[Navigation]}
     navigation
-    slidesPerView={3}
-    spaceBetween={20}
-    loop>
-    <SwiperSlide>
-      <div><h1>sla</h1></div>
-      </SwiperSlide>
-    <SwiperSlide>Card 2</SwiperSlide>
-    <SwiperSlide>Card 3</SwiperSlide>
-  </Swiper>
+  loop={false} // evita bug quando tem menos slides que o necessário
+  breakpoints={{
+    320: { slidesPerView: 1, spaceBetween: 10 },
+    768: { slidesPerView: 2, spaceBetween: 15 },
+    1024: { slidesPerView: "auto", spaceBetween: 20 },
+  }}
+>
+  <SwiperSlide className={styles.card}>
+    <img
+      src={imagemSiteFoco}
+      alt="Site da Foco Cartuchos"
+      className={styles.imgSiteFoco}
+    />
+    <p className={styles.texto}>Redesign - Site da Foco Cartuchos</p>
+    <div className={styles.link}>
+      <a href="#" className={styles.textoLink}>
+        FIGMA
+      </a>
+    </div>
+  </SwiperSlide>
+
+  <SwiperSlide className={styles.card}>
+    <img
+      src={imagemAppFred}
+      alt="Aplicativo Pão do Fred"
+      className={styles.imgAppFred}
+    />
+    <p className={styles.texto}>Design - Aplicativo Pão do Fred</p>
+    <div className={styles.link}>
+      <a href="#" className={styles.textoLink}>
+        FIGMA
+      </a>
+    </div>
+  </SwiperSlide>
+</Swiper>
 );
