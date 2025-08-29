@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+.areaTagFechamento{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 5vh;
+}
+
+.tagFechamento{
+    font-size: 2em;
+}
+.linkTexto{
+    padding: 5vh;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+}
+.linkTexto:hover{
+    text-decoration: underline;
+}
+.imgCelulares{
+    width: 30rem;
+    height: 27rem;
+    padding-left: 20px;
+}
+.areaTitulo{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-top: 10vh;
+}
+
+.areaTexto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 15vh;
+}
+.nome{
+    font-weight: 550;
+    font-size: 4em;
+}
+.profissao{
+    font-size: 2em;
+    width: 35vh;
+    margin: auto;
+}
+
+@media (max-width: 1024px) {
+    .imgCelulares{
+        width: 20rem;
+        height: 17rem;
+    }
+    .container {
+        height: 75%
+    }
+}
+
+/* Celular */
+@media (max-width: 768px) {
+  .imgCelulares{
+          width: 20rem;
+          height: 17rem;
+  }
+  .areaTitulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .areaTexto{
+    margin-left: 0px;
+  }
+  .nome{
+    font-size: 3em;
+}
+}

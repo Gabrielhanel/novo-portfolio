@@ -6,6 +6,10 @@ import Projetos from './pages/Projetos/projetos';
 import './styles/globals.css'
 import Design from './pages/Designs/design';
 import Habilidades from './pages/Habilidades/habilidades';
+import ComputerScience from './pages/Courses/ComputerScience/computer-science';
+import Certificates from './pages/Courses/Certificates/certificates';
+import Footer from './pages/Footer/footer';
+
 function App() {
   return (
     <div className="App">
@@ -14,6 +18,9 @@ function App() {
       <Projetos/>
       <Design/>
       <Habilidades/>
+      <ComputerScience/>
+      <Certificates/>
+      <Footer/>
     </div>
   );
 }

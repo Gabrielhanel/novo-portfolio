@@ -60,3 +60,10 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
+
+.titulo {
+    font-size: 3em;
+    color: #355B73;
+    font-weight: bold;
+    text-align: left;
+}
