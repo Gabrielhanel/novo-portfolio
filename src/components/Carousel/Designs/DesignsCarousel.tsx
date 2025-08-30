@@ -17,7 +17,7 @@ export const DesignsCarousel = () => (
     1024: { slidesPerView: "auto", spaceBetween: 20 },
   }}
 >
-  <SwiperSlide className={styles.card}>
+  <SwiperSlide>
     <img
       src={imagemSiteFoco}
       alt="Site da Foco Cartuchos"
@@ -31,7 +31,7 @@ export const DesignsCarousel = () => (
     </div>
   </SwiperSlide>
 
-  <SwiperSlide className={styles.card}>
+  <SwiperSlide >
     <img
       src={imagemAppFred}
       alt="Aplicativo Pão do Fred"
