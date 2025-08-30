@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Keyboard, Mousewheel } from "swiper/modules";
+import { Navigation, Keyboard, } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import styles from "../../../pages/Projetos/projetos.module.css";
@@ -11,9 +11,8 @@ import { LinkButton } from "../../Button/LinkButton";
 
 export const ProjectsCarousel = () => (
   <Swiper
-    modules={[Navigation, Keyboard, Mousewheel]}
+    modules={[Navigation, Keyboard]}
     navigation
-    mousewheel
     keyboard
     breakpoints={{
       640: { slidesPerView: 1, spaceBetween: 10 },
@@ -22,8 +21,8 @@ export const ProjectsCarousel = () => (
     loop
   >
     <SwiperSlide className={styles.card}>
-      <img src={globalImports} alt="Logo do aplicativo Global Imports" />
-      <p>
+      <img src={globalImports} alt="Logo do aplicativo Global Imports" className={styles.LogoDoApp} />
+      <p className={styles.descricaoProjetos}>
         Sinta a nostalgia e o poder das máquinas clássicas. Ideal para
         apaixonados por carros!
       </p>
@@ -36,8 +35,8 @@ export const ProjectsCarousel = () => (
       </LinkButton>
     </SwiperSlide>
     <SwiperSlide className={styles.card}>
-      <img src={logoRodometro} alt="Logo do aplicativo Rodometro" />
-      <p>
+      <img src={logoRodometro} alt="Logo do aplicativo Rodometro" className={styles.LogoDoApp}/>
+      <p className={styles.descricaoProjetos}>
         Economia e controle na estrada ou no dia a dia. Descubra o quanto seu
         carro gasta de verdade.
       </p>
@@ -50,8 +49,8 @@ export const ProjectsCarousel = () => (
       </LinkButton>
     </SwiperSlide>
     <SwiperSlide className={styles.card}>
-      <img src={appStarWars} alt="Logo do aplicativo Star Wars" />
-      <p>
+      <img src={appStarWars} alt="Logo do aplicativo Star Wars" className={styles.LogoDoApp} />
+      <p className={styles.descricaoProjetos}>
         Explore o universo de Star Wars com facilidade e conforto. Descubra o
         poder da força.
       </p>

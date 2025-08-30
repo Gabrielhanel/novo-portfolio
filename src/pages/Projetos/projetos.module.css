@@ -10,3 +10,15 @@
   align-items: center;
   padding: 2rem;
 }
+
+.LogoDoApp {
+  width: 13rem;
+  margin-top: 4rem;
+}
+.descricaoProjetos{
+  font-size: 1.5rem;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
