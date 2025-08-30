@@ -1,8 +1,9 @@
 .card {
   background-color: #fff;
   border-radius: 19px;
-  height: 30rem;
+  height: auto;
   width: 300px; 
+  padding-bottom: 2rem;
 }
 .areaProjetos {
       display: flex;
@@ -17,8 +18,34 @@
 }
 .descricaoProjetos{
   font-size: 1.5rem;
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 3rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-bottom: 3rem;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .card{
+    height: auto;
+  }
+  .descricaoProjetos{
+    margin-top: 5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .descricaoProjetos{
+      padding-left: 2rem;
+  padding-right: 2rem;
+  }
+}
+@media (min-height: 1300px) {
+  .descricaoProjetos{
+    padding-left: 2rem;
+  padding-right: 2rem;
+  }
+
 }
