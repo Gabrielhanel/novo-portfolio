@@ -13,7 +13,7 @@ export default function About() {
 
           <a href="/docs/Curriculo.pdf" className={styles.botao} target="_blank" rel="noopener noreferrer">
             <div className={styles.areaBotao}>
-              <span>BAIXAR CV</span>
+              <span className={styles.textoBotao}>BAIXAR CV</span>
             </div>
           </a>
         </div>

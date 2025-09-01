@@ -36,7 +36,11 @@ body {
     }
 }
 
-/* Celular */
-@media (max-width: 1000px) {
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* desabilita scroll horizontal */
+}
 
+section, div {
+  max-width: 100vw; 
 }

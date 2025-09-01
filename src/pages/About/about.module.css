@@ -31,6 +31,14 @@
     background-color: #355B73;
     height: 5vh;
     border-radius: 70px;
+    transition: 0.8s;
+}
+.areaBotao:hover{
+    background-color: white;
+    border: #355B73 solid 2px;
+}
+.botao:hover{
+    color: #355B73;
 }
 .botao{
     text-decoration: none;

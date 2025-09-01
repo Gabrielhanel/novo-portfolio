@@ -1,6 +1,6 @@
 import celularesImg from "../../assets/images/celulares.png";
 import styles from "./home.module.css";
-
+import About from "../About/about";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -15,12 +15,10 @@ export default function Home() {
           <div className={styles.areaTagFechamento}>
             <span className={styles.tagFechamento}>{"<" + "/" + ">"}</span>
           </div>
-          <a href="#" className={styles.linkTexto}>Sobre</a>
-          <a href="#" className={styles.linkTexto}>Projetos</a>
-          <a href="#" className={styles.linkTexto}>Habilidades</a>
-          <a href="#" className={styles.linkTexto} style={{ marginRight: "7vh" }}>
-            Contato
-          </a>
+  <a href="#about" className={styles.linkTexto}>Sobre</a>
+  <a href="#projects" className={styles.linkTexto}>Projetos</a>
+  <a href="#skills" className={styles.linkTexto}>Habilidades</a>
+  <a href="#contact" className={styles.linkTexto} style={{marginRight: "7vh"}}>Contato</a>
         </div>
       </div>
 

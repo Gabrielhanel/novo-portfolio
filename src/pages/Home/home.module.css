@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .container {
     height: 100%;
@@ -19,18 +22,35 @@
     font-size: 2em;
 }
 .linkTexto{
-    padding: 5vh;
+    padding: 2vh 5vh;
     text-decoration: none;
     font-size: 1.5em;
     color: black;
+    transition: color 0.3s, transform 0.3s;
 }
-.linkTexto:hover{
-    text-decoration: underline;
+.linkTexto:hover {
+  color: #355B73;
+  transform: scale(1.1); /* aumenta levemente */
+}
+.linkTexto::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #355b73;
+  transition: width 0.3s;
+}
+
+.linkTexto:hover::after {
+  width: 100%;
 }
 .imgCelulares{
     width: 30rem;
     height: 27rem;
     padding-left: 20px;
+    user-select: none;
 }
 .areaTitulo{
           display: flex;
@@ -79,6 +99,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 3vh;
   }
   .areaTexto{
     margin-left: 0px;

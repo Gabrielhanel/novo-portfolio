@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.areaIcons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, auto)); /* mínimo 80px */
+  gap: 3rem; /* controla o espaçamento entre os ícones */
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  justify-content: center; /* centraliza os ícones no grid */
+}
+
+.iconImg {
+  width: 5rem;
+  height: 5rem;
+}
+
+.iconImg:hover {
+    transform: scale(1.1);
+    transition-duration: 0.6s;
+}
+.icon {
+    transition: all.3s;
+} 
+.icon:hover {
+    transform: translateY(-15px);
+}
+/* Tablet */
+@media (max-width: 1024px) {
+  .areaIcons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+  .areaIcons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    gap: 2rem;
+  }
+}

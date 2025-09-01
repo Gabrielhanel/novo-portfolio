@@ -28,3 +28,12 @@
   text-align: center;
   transition: background 0.3s ease;
 }
+.Figma:hover {
+  background-color: white;
+  border: #355B73 solid 1px;
+}
+.Github:hover {
+  color: #355B73;
+  background-color: white;
+  border: #355B73 solid 1px;
+}

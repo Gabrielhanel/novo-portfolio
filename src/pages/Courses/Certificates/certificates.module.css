@@ -1,5 +1,6 @@
 .imgCertificado{
     width: 35rem;
+    border-radius: 20px;
 }
 .texto{
     font-size: 1.5rem;
@@ -7,7 +8,7 @@
 }
 @media (max-width: 768px) {
     .imgCertificado{
-        width: 18rem;
+        width: 17rem;
     }
     .texto{
         font-size: 1.2rem;

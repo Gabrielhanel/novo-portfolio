@@ -45,6 +45,7 @@
   background-color: #355b73;
   border-radius: 18px;
   margin: 0 auto 1rem auto;
+  transition: 0.8s;
 }
 
 .textoLink {
@@ -52,6 +53,11 @@
   font-size: 1.8rem;
   font-weight: bold;
   color: white;
+}
+.link:hover{
+background-color: white;
+color: #355b73;
+border: #355b73 solid 1px;
 }
 
 .areaDesign {
