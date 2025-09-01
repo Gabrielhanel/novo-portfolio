@@ -9,6 +9,7 @@ import Habilidades from './pages/Habilidades/habilidades';
 import ComputerScience from './pages/Courses/ComputerScience/computer-science';
 import Certificates from './pages/Courses/Certificates/certificates';
 import Footer from './pages/Footer/footer';
+import Contacts from './pages/Contacts/contacts';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Habilidades/>
       <ComputerScience/>
       <Certificates/>
+      <Contacts/>
       <Footer/>
     </div>
   );
