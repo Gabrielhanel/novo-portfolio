@@ -39,6 +39,7 @@ body {
 html, body {
   width: 100%;
   overflow-x: hidden; /* desabilita scroll horizontal */
+  scroll-behavior: smooth;
 }
 
 section, div {
