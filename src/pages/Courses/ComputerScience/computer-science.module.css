@@ -4,3 +4,13 @@
     margin-left: 20vh;
     font-weight: normal;
 } 
+/* Celular */
+@media (max-width: 768px) {
+    .textoFormacaoAcademica{
+        font-size: 1.7em;
+        text-align: center;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-left: 2rem;
+    }
+}

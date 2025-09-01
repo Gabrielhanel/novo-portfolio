@@ -60,7 +60,7 @@ export default function Habilidades() {
         </div>
       </div>
 
-      <h2 className={styles.subTitulo}>OUTROS</h2>
+      <h2 className={styles.subTitulo} style={{marginTop: "2rem"}}>OUTROS</h2>
 
       <div
         style={{
