@@ -13,12 +13,12 @@ export const ProjectsCarousel = () => (
   <Swiper
     modules={[Navigation, Keyboard]}
     navigation
+      loop={false} // evita bug quando tem menos slides que o necessário
     keyboard
     breakpoints={{
       640: { slidesPerView: 1, spaceBetween: 10 },
       1024: { slidesPerView: "auto", spaceBetween: 30 },
     }}
-    loop
   >
     <SwiperSlide className={styles.card}>
       <img src={globalImports} alt="Logo do aplicativo Global Imports" className={styles.LogoDoApp} />
