@@ -11,7 +11,7 @@ export default function About() {
         <div style={{ display: "block" }}>
           <img src={myPhoto} className={styles.imgMinhaFoto} />
 
-          <a href="#" className={styles.botao}>
+          <a href="/docs/Curriculo.pdf" className={styles.botao} target="_blank" rel="noopener noreferrer">
             <div className={styles.areaBotao}>
               <span>BAIXAR CV</span>
             </div>

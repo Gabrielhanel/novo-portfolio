@@ -15,8 +15,8 @@
     justify-content: center;
     border-radius: 19px;
 border: 1px solid #E0E0E0;
-height: 20vh;
-width: 20vh;
+height: 12rem;
+width: 12rem;
 padding: 2vh;
 background: #E1E5EA;
 }
@@ -25,22 +25,6 @@ background: #E1E5EA;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 por linha no desktop */
   gap: 20px;
-}
-
-/* Tablet */
-@media (max-width: 1024px) {
-  .cards {
-    grid-template-columns: repeat(2, 1fr); /* 2 por linha */
-      margin-left: 0vh;
-  }
-}
-
-/* Celular */
-@media (max-width: 768px) {
-  .cards {
-    grid-template-columns: 1fr; /* 1 por linha */
-      margin-left: 0vh;
-  }
 }
 
 .textHabilidades{
@@ -66,4 +50,33 @@ line-height: normal;
     color: #355B73;
     font-weight: bold;
     text-align: left;
+}
+
+.imgHabilidades{
+    width: 8rem;
+    height: 8rem;
+}
+/* Tablet */
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr); /* 2 por linha */
+      margin-left: 0vh;
+  }
+}
+
+/* Celular */
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr; /* 1 por linha */
+      margin-left: 0vh;
+  }
+  .cardHabilidades{
+    padding: 0vh;
+    height: 10rem;
+    width: 10rem;
+  }
+.imgHabilidades{
+    width: 6rem;
+    height: 6rem;
+}
 }

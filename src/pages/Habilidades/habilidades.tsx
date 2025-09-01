@@ -54,7 +54,8 @@ export default function Habilidades() {
           </div>
 
           <div className={styles.cardHabilidades}>
-            <img src={reactNativeImage} alt="Logo React Native" className={styles.imgHabilidades} />
+            <img src={reactImage} alt="Logo React" className={styles.imgHabilidades} />
+            <span className={styles.textHabilidades}>REACT NATIVE</span>
           </div>
         </div>
       </div>

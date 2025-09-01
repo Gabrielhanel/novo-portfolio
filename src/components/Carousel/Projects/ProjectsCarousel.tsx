@@ -26,11 +26,11 @@ export const ProjectsCarousel = () => (
         Sinta a nostalgia e o poder das máquinas clássicas. Ideal para
         apaixonados por carros!
       </p>
-      <LinkButton href="https://github.com/seuusuario" styleButton="Figma">
+      <LinkButton href="https://www.figma.com/design/i7PeVQSJmY0PN12IEUVdLo/Prot%C3%B3tipo-de-Alta-Fidelidade?node-id=0-1&t=1w1iq8LRB8rw1F4M-1" styleButton="Figma" target="_blank" rel="noopener noreferrer">
         FIGMA
       </LinkButton>
       <br />
-      <LinkButton href="https://github.com/seuusuario" styleButton="Github">
+      <LinkButton href="https://github.com/Gabrielhanel/globalImports" styleButton="Github" target="_blank" rel="noopener noreferrer" >
         GITHUB
       </LinkButton>
     </SwiperSlide>
@@ -40,11 +40,11 @@ export const ProjectsCarousel = () => (
         Economia e controle na estrada ou no dia a dia. Descubra o quanto seu
         carro gasta de verdade.
       </p>
-      <LinkButton href="https://github.com/seuusuario" styleButton="Figma">
+      <LinkButton href="https://www.figma.com/design/3J8loBnPh568e6xnVIn8zI/Rodometro?node-id=0-1&t=Afc82c9JPlFCHcMi-1" styleButton="Figma" target="_blank" rel="noopener noreferrer">
         FIGMA
       </LinkButton>
       <br />
-      <LinkButton href="https://github.com/seuusuario" styleButton="Github">
+      <LinkButton href="https://github.com/Gabrielhanel/rodometro" styleButton="Github" target="_blank" rel="noopener noreferrer">
         GITHUB
       </LinkButton>
     </SwiperSlide>
@@ -54,11 +54,11 @@ export const ProjectsCarousel = () => (
         Explore o universo de Star Wars com facilidade e conforto. Descubra o
         poder da força.
       </p>
-      <LinkButton href="https://github.com/seuusuario" styleButton="Figma">
+      <LinkButton href="https://www.figma.com/design/O1voqMFFVdNqsK3pyMwFyq/Holocron-Archives?node-id=0-1&t=6dZG0UmEV0knJuHS-1" styleButton="Figma" target="_blank" rel="noopener noreferrer">
         FIGMA
       </LinkButton>
       <br />
-      <LinkButton href="https://github.com/seuusuario" styleButton="Github">
+      <LinkButton href="https://github.com/Gabrielhanel/holocron-archives" styleButton="Github" target="_blank" rel="noopener noreferrer">
         GITHUB
       </LinkButton>
     </SwiperSlide>

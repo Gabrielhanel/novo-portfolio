@@ -10,14 +10,14 @@
   text-align: left;
 }
 
-.areaTitulo {
-  width: 100%;
-  padding: 2rem 1rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.areaTitulo{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 35vh;
 }
-
 .imgSiteFoco,
 .imgAppFred {
   width: 100%;
