@@ -5,6 +5,11 @@ body {
     background-color: #F2F2F2;
 }
 
+img{
+    -webkit-user-drag: none; /* Chrome/Safari */
+  pointer-events: none;    /* Opcional, impede até clique */
+}
+
 .titulo {
     font-size: 3em;
     color: #355B73;
