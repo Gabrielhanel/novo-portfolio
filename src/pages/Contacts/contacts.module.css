@@ -26,6 +26,7 @@
 } 
 .icon:hover {
     transform: translateY(-15px);
+        cursor: pointer;
 }
 /* Tablet */
 @media (max-width: 1024px) {
