@@ -6,6 +6,12 @@
     font-size: 1.5rem;
     color: #4D4D4D;
 }
+.areaCarouselCertificados{
+      display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
 @media (max-width: 768px) {
     .imgCertificado{
         width: 17rem;
