@@ -36,7 +36,7 @@ export const CertificatesCarousel = () => (
 
   <SwiperSlide>
     <img src={CertificadoAWS} alt="Certificado da AWS" className={styles.imgCertificado} />
-    <p className={styles.texto}>AWS Cloud Practitioner – AWS (400h, 2024)</p>
+    <p className={styles.texto}>AWS Cloud Foundations – AWS (400h, 2024)</p>
   </SwiperSlide>
 </Swiper>
 );
