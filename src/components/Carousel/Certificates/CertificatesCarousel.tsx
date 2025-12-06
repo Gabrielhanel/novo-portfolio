@@ -1,6 +1,8 @@
 import React from "react";
 import CertificadoFullStack from "../../../assets/images/certificado-devFullStack.webp";
 import CertificadoAplicacoesJr from "../../../assets/images/certificado-devAplicacoesJr.webp"
+import CertificadoEngenhariaDeSoftware from '../../../assets/images/certificado-qualificacaoEngSofrware.webp'
+import CertificadoAWS from '../../../assets/images/certificate-aws.webp'
 import styles from "../../../pages/Courses/Certificates/certificates.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Keyboard } from "swiper/modules";
@@ -26,6 +28,15 @@ export const CertificatesCarousel = () => (
   <SwiperSlide >
     <img src={CertificadoAplicacoesJr} alt="Certificado da ATITUS de Desenvolvimento de Aplicações Júnior" className={styles.imgCertificado} />
     <p className={styles.texto}>Desenvolvimento de Aplicações Júnior – ATITUS (400h, 2024)</p>
+  </SwiperSlide>
+  <SwiperSlide>
+    <img src={CertificadoEngenhariaDeSoftware} alt="Certificado da ATITUS de Engenharia de Software" className={styles.imgCertificado} />
+    <p className={styles.texto}>Engenharia de Software – ATITUS (400h, 2025)</p>
+  </SwiperSlide>
+
+  <SwiperSlide>
+    <img src={CertificadoAWS} alt="Certificado da AWS" className={styles.imgCertificado} />
+    <p className={styles.texto}>AWS Cloud Practitioner – AWS (400h, 2024)</p>
   </SwiperSlide>
 </Swiper>
 );
