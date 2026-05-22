@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './experience.module.css';
 
-interface Experience {
+interface ExperienceItem {
   id: number;
   role: string;
   company: string;
@@ -10,7 +10,7 @@ interface Experience {
   technologies: string[];
 }
 
-const experiencesData: Experience[] = [
+const experiencesData: ExperienceItem[] = [
   {
     id: 1,
     role: 'Quality Assurance (QA)',
