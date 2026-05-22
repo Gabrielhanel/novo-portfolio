@@ -92,7 +92,10 @@
   .titulo {
     text-align: center;
   }
-  
+
+  .container {
+    padding: 0rem 1 rem;
+  }
   .content {
     flex-direction: column; /* Joga a foto pra cima e o texto pra baixo */
     align-items: center;
