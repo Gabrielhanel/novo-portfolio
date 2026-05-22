@@ -1,68 +1,113 @@
-.areaMinhaFoto{
+/* Contêiner principal e centralização */
+.container {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-  padding-top: 5vh;
-}
-.imgMinhaFoto{
-    width: 30vh;
-    height: 35vh;
-    padding-bottom: 5vh;
-}
-.areaTexto{
-    display: block;
-    text-align: center;
-    margin-left: 25vh;
-    margin-top: 3vh;
-    width: 60vw;
-}
-.texto{
-    font-size: 1.5em;
-        color: #355B73;
-    font-weight: 400;
-    text-align: center;
-}
-.areaBotao{
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    background-color: #355B73;
-    height: 5vh;
-    border-radius: 70px;
-    transition: 0.8s;
-}
-.areaBotao:hover{
-    background-color: white;
-    border: #355B73 solid 2px;
-}
-.botao:hover{
-    color: #355B73;
-}
-.botao{
-    text-decoration: none;
-    font-size: 1.5em;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-}
-@media (max-width: 1024px) {
-.areaMinhaFoto{
-  flex-direction: column;
-}
+  padding: 4rem 1rem;
 }
 
-/* Celular */
-@media (max-width: 1000px) {
-.areaMinhaFoto{
+.wrapper {
+  width: 100%;
+  max-width: 1000px; /* Mantém o padrão de largura do site */
+  display: flex;
   flex-direction: column;
-  padding-top: 0;
 }
-.areaTexto{
-    margin-left: 0;
+
+/* Título */
+.titulo {
+  font-size: 3em;
+  color: #355B73;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 2rem;
 }
-.texto{
-  padding-bottom: 3vh;
+
+/* Área que envelopa a foto e os textos lado a lado */
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 4rem; /* Cria um espaçamento perfeito entre a foto e o texto */
 }
+
+/* Coluna da Foto + Botão */
+.imageColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  flex-shrink: 0; /* Impede que a foto seja "esmagada" pelo texto */
+}
+
+.imgMinhaFoto {
+  width: 280px;
+  height: auto;
+  border-radius: 16px; /* Adiciona um arredondamento suave na foto */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Uma sombra leve para dar destaque */
+  object-fit: cover;
+}
+
+/* Estilo do Botão */
+.botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #355B73;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 99px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+
+.botao:hover {
+  background-color: transparent;
+  color: #355B73;
+  border-color: #355B73;
+}
+
+/* Coluna dos Textos */
+.textColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem; /* Espaço entre os parágrafos */
+}
+
+.texto {
+  font-size: 1.15rem; /* Ajustado para melhor leitura */
+  color: #333333; /* Cinza escuro, mesmo das outras seções */
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: justify; /* Deixa o bloco de texto retinho e muito mais profissional */
+  margin: 0;
+}
+
+/* Responsividade para Celulares e Tablets */
+@media (max-width: 768px) {
+  .titulo {
+    text-align: center;
+  }
+  
+  .content {
+    flex-direction: column; /* Joga a foto pra cima e o texto pra baixo */
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .imgMinhaFoto {
+    width: 220px; /* Reduz um pouco a foto no celular */
+  }
+
+  .textColumn {
+    width: 100%;
+  }
+
+  .texto {
+    text-align: left; /* No celular, alinhar à esquerda é melhor que justificar */
+  }
 }

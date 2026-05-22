@@ -1,24 +1,110 @@
-.imgCertificado{
-    width: 35rem;
-    border-radius: 20px;
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem;
 }
-.texto{
-    font-size: 1.5rem;
-    color: #4D4D4D;
+
+.areaTitulo {
+  margin-bottom: 2rem;
 }
-.areaCarouselCertificados{
-      display: flex;
+
+.titulo {
+  font-size: 3em;
+  color: #355B73;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ========================================= */
+/* ESTILO DAS ABAS (TÓPICOS)                 */
+/* ========================================= */
+.tabContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap; /* Permite que os botões caiam para a linha de baixo no celular */
+}
+
+.tabButton {
+  background-color: transparent;
+  border: 2px solid #355B73;
+  color: #355B73;
+  padding: 0.8rem 2rem;
+  border-radius: 99px; /* Botões arredondados como nas outras seções */
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tabButton:hover {
+  background-color: #f0f4f8;
+}
+
+/* Aba Selecionada */
+.tabActive {
+  background-color: #355B73;
+  color: white;
+}
+
+.tabActive:hover {
+  background-color: #355B73;
+}
+
+/* ========================================= */
+/* ESTILO DO CARROSSEL E CERTIFICADOS        */
+/* ========================================= */
+.areaCarouselCertificados {
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  width: 100%;
+  max-width: 1200px; /* Limita a largura em monitores muito grandes */
+  padding: 0 2rem;
 }
+
+.imgCertificado {
+  width: 35rem;
+  max-width: 100%; /* Garante que a imagem não vaze em telas pequenas */
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+.texto {
+  font-size: 1.2rem;
+  color: #4D4D4D;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
-    .imgCertificado{
-        width: 17rem;
-    }
-    .texto{
-        font-size: 1.2rem;
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
+  .titulo {
+    font-size: 2.5em;
+  }
+  
+  .tabContainer {
+    gap: 1rem;
+  }
+  
+  .tabButton {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+
+  .imgCertificado {
+    width: 100%; /* Ocupa toda a tela no celular */
+  }
+
+  .texto {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
 }

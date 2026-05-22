@@ -1,16 +1,120 @@
-.textoFormacaoAcademica{
-    font-size: 2em;
-    text-align: left;
-    margin-left: 20vh;
-    font-weight: normal;
-} 
-/* Celular */
+/* Contêiner principal para centralizar e alinhar */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1rem;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Título da Seção */
+.titulo {
+  font-size: 3em;
+  color: #355B73; /* Azul do seu tema */
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+/* O Card de Formação */
+.card {
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: 1px solid #E0E0E0;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-color: #355B73;
+}
+
+/* Cabeçalho do Card */
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+/* Curso e Instituição */
+.curso {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000000;
+  margin: 0;
+}
+
+.instituicao {
+  font-size: 1rem;
+  color: #355B73;
+  margin: 0.25rem 0 0 0;
+  font-weight: 600;
+}
+
+/* Contêiner dos Badges (Data e Status) */
+.badgesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+/* Badges de Data e Status */
+.periodo, .statusBadge {
+  font-size: 0.85rem;
+  white-space: nowrap;
+  padding: 0.25rem 0.75rem;
+  border-radius: 99px;
+  font-weight: 500;
+}
+
+.periodo {
+  color: #333333;
+  background-color: #E1E5EA; /* Fundo cinza padrão */
+  border: 1px solid #d1d5da;
+}
+
+.statusBadge {
+  color: #ffffff;
+  background-color: #355B73; /* Destaque em azul para "Em andamento" */
+}
+
+/* Pequeno texto de descrição (opcional, mas recomendado) */
+.descricao {
+  font-size: 0.95rem;
+  color: #333333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsividade para Celulares */
 @media (max-width: 768px) {
-    .textoFormacaoAcademica{
-        font-size: 1.7em;
-        text-align: center;
-        padding-left: 3rem;
-        padding-right: 3rem;
-        margin-left: 2rem;
-    }
+  .titulo {
+    text-align: center; /* Centraliza o título no mobile */
+    font-size: 2.5em;
+  }
+
+  .cardHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .badgesContainer {
+    align-items: flex-start;
+    flex-direction: row; /* Coloca os badges lado a lado no celular */
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
 }
