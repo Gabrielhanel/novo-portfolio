@@ -42,8 +42,6 @@
 .imgMinhaFoto {
   width: 280px;
   height: auto;
-  border-radius: 16px; /* Adiciona um arredondamento suave na foto */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Uma sombra leve para dar destaque */
   object-fit: cover;
 }
 
