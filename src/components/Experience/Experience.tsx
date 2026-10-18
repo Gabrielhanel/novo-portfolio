@@ -11,14 +11,27 @@ interface ExperienceItem {
 }
 
 const experiencesData: ExperienceItem[] = [
-  {
-    id: 1,
-    role: 'Quality Assurance (QA)',
-    company: 'Spread',
-    period: 'Jan 2026 - Presente',
-    description: 'Atuação  no desenvolvimento e manutenção de automação de testes de software. Responsável pela criação de scripts utilizando Java e Selenium para otimizar validações, prevenir falhas e garantir a qualidade contínua das entregas.',
-    technologies: ['Java', 'Selenium', 'Testes Automatizados'],
-  },
+{
+  id: 1,
+  role: 'Quality Assurance (QA)',
+  company: 'Spread',
+  period: 'Jan 2026 - Presente',
+  description: 'Desenvolvimento e manutenção de testes automatizados para aplicações Web e APIs utilizando Java e JavaScript. Atuação em testes de UI com Selenium, Cucumber, JUnit e Cypress; testes de API com RestAssured e Postman; documentação e gestão de bugs com ALM Octane; e estruturação de cenários de teste utilizando Gherkin e a abordagem BDD.',
+  technologies: [
+    'Java',
+    'JavaScript',
+    'Selenium',
+    'Cucumber',
+    'JUnit',
+    'Cypress',
+    'RestAssured',
+    'Postman',
+    'ALM Octane',
+    'Gherkin',
+    'BDD',
+    'Testes Automatizados',
+  ],
+},
 ];
 
 export default function Experience() {

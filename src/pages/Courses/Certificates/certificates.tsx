@@ -9,18 +9,22 @@ import CertificadoEngenhariaDeSoftware from '../../../assets/images/certificado-
 import CertificadoAWS from '../../../assets/images/certificate-aws.webp';
 import CertificadoCloud from '../../../assets/images/certificadoArquiteturaSolucoesCloud.png'
 import CertificadoPostman from '../../../assets/images/certificado-postman.jpg'
+import CertificadoHardware from '../../../assets/images/ArquiteturaHardware.jpg'
+import CertificadoHTMLCursoEmVideo from '../../../assets/images/html-css-cursoemvideo.jpg'
 
 // 1. Criando as listas com a nova separação
 const certificadosAcademicos = [
   { id: 'fullstack', img: CertificadoFullStack, alt: 'Certificado FullStack', text: 'Desenvolvimento de Soluções Full Stack – ATITUS (400h, 2024)' },
   { id: 'aplicacoes', img: CertificadoAplicacoesJr, alt: 'Certificado Aplicações Jr', text: 'Desenvolvimento de Aplicações Júnior – ATITUS (400h, 2024)' },
   { id: 'engsoftware', img: CertificadoEngenhariaDeSoftware, alt: 'Certificado Engenharia de Software', text: 'Engenharia de Software – ATITUS (400h, 2025)' },
-    { id: 'engsoftware', img: CertificadoCloud, alt: 'Certificado Soluções em Cloud', text: 'Soluções em Cloud – ATITUS (400h, 2025)' }
+  { id: 'engsoftware', img: CertificadoCloud, alt: 'Certificado Soluções em Cloud', text: 'Soluções em Cloud – ATITUS (400h, 2025)' },
+  {id: 'arqhardware', img: CertificadoHardware, alt: 'Certificado Hardware', text: 'Hardware e Computação Distribuída – ATITUS (400h, 2026)'},
 ];
 
 const certificadosOutros = [
+    { id: 'html', img: CertificadoHTMLCursoEmVideo, alt: 'Certificado HTML e CSS (Módulo 1)', text: 'Curso de HTML e CSS – Curso em Vídeo (2024)' },
   { id: 'aws1', img: CertificadoAWS, alt: 'Certificado da AWS', text: 'AWS Cloud Foundations – AWS (400h, 2024)' },
-  { id: 'aws2', img: CertificadoPostman, alt: 'Certificado do postman', text: 'Postman: Do 0 ao Avançado + Testes Automatizados (3h, 2026)' }
+  { id: 'postman', img: CertificadoPostman, alt: 'Certificado do postman', text: 'Postman: Do 0 ao Avançado + Testes Automatizados (3h, 2026)' },
 ];
 
 export default function Certificates() {
